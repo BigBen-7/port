@@ -1,0 +1,83 @@
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  .navigation-wrapper {
+    flex-direction: column;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+  .nav-links {
+    padding: 1rem 1.2rem;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .content-inner {
+    padding: 2rem 2rem;
+  }
+  .content > .content-inner > p {
+    margin-top: 6rem;
+    text-align: left;
+  }
+  .content > .content-inner > h1 {
+    font-size: 3rem;
+  }
+  .content > .content-inner #pp {
+    position: relative;
+    bottom: 5.5rem;
+    font-size: 20px;
+  }
+  .about-wrapper {
+    margin-top: 200px;
+  }
+  .about-wrapper > .about-inner {
+    text-align: center;
+    padding: 0 3rem;
+    margin: 0 3rem;
+  }
+
+  .about-wrapper > .about-inner > .btn-wrapper {
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  main h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .services-content {
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+  }
+  .nat img {
+    width: 155px;
+    margin-top: 8rem;
+  }
+
+  .former {
+    flex-direction: column;
+    margin: auto;
+    margin-top: 300px;
+  }
+  .form-group {
+    margin-right: 10rem;
+  }
+  div > .naru img {
+    width: 405px;
+    animation-name: mage;
+    position: relative;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes mage {
+    0% {
+      top: -2000px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+}

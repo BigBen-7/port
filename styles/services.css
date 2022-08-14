@@ -1,0 +1,81 @@
+main h1 {
+  text-align: center;
+  font-size: 5rem;
+  animation-name: h3;
+  position: relative;
+  animation-duration: 3s;
+  /* animation-fill-mode: forwards; */
+}
+@keyframes h3 {
+  0% {
+    bottom: 350px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+.services-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.services-content > .services {
+  border: 2px solid #022121;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 1rem 2rem;
+  background-color: #080914;
+  color: #048080;
+  position: relative;
+  animation-name: services;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+  transition: all 1s ease-in;
+}
+@keyframes services {
+  0% {
+    left: -1200px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.services-content > .services h3 {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #048080;
+  margin-bottom: 15px;
+}
+
+.services-content > .services p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 20px;
+}
+.services:hover {
+  transform: scale(0.9) translateY(-25px);
+  background-color: #838689;
+  color: #fff;
+  font-weight: lighter;
+}
+.nat img {
+  animation-name: img;
+  position: relative;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  transition: 1s ease-in;
+}
+@keyframes img {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0;
+  }
+}

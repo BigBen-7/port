@@ -1,0 +1,93 @@
+figcaption {
+  font-size: 1.5rem;
+  animation-name: btn;
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  animation-duration: 3.5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.about-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.about-wrapper > .about-inner {
+  width: 1000px;
+}
+.about-wrapper > .about-inner img {
+  width: 350px;
+  margin: 23px 20px 10px 10px;
+  float: left;
+  animation-name: img;
+  animation-duration: 5s;
+  animation-delay: 2.7s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 3s ease-in;
+}
+@keyframes img {
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.about-wrapper > .about-inner p {
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin-top: 50px;
+}
+
+.btn-wrapper {
+  margin-top: 20px;
+  animation-name: btn;
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  animation-duration: 3.5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes btn {
+  0% {
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+#p1 {
+  position: relative;
+  animation-name: p1;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+  transition: all 1s ease-in;
+}
+
+@keyframes p1 {
+  0% {
+    right: -1200px;
+  }
+  100% {
+    right: 0;
+  }
+}
+#p2 {
+  position: relative;
+  animation-name: p2;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+  transition: all 1s ease-in;
+}
+
+@keyframes p2 {
+  0% {
+    right: 1500px;
+  }
+  100% {
+    right: 0;
+  }
+}

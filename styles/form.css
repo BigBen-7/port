@@ -1,0 +1,71 @@
+/* form styles */
+.form {
+  margin: auto;
+}
+
+.form input {
+  font-size: 1.2em;
+  font-family: inherit;
+  color: inherit;
+  padding: 1em 2em;
+  margin-left: 50px;
+
+  border: none;
+  border-bottom: 3px solid #0bb1f3;
+  background-color: transparent;
+  display: block;
+  transition: all 0.3s;
+}
+.form input:focus {
+  outline: none;
+  border-bottom: 3px solid #0bb1f3;
+  box-shadow: 0 1rem 2rem rgba(236, 215, 215, 0.1);
+  background-color: transparent;
+}
+.form input:focus::-webkit-input-placeholder {
+  color: #0bb1f3;
+  font-size: 15px;
+}
+.form input:focus::-webkit-input-placeholder {
+  color: transparent;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+.form label {
+  font-size: 1, 2rem;
+  font-weight: 700;
+  margin-left: 4rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  color: #0bb1f3;
+  visibility: hidden;
+  opacity: 0;
+}
+.form input:focus + label {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(1rem);
+}
+.btn {
+  background-color: #0bb1f3;
+  color: #000;
+  font-size: 1.25rem;
+  padding: 10px 20px;
+  border: 1px solid #0bb1f3;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #000;
+  letter-spacing: 8px;
+}
+.btn:active {
+  box-shadow: 5px 5px 30px rgba(236, 215, 215, 0.1);
+}
+.btn-wrapper {
+  margin-left: 150px;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,91 @@
+.navigation-wrapper > .logo {
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+span {
+  color: #0bb1f3;
+}
+.navigation-wrapper {
+  height: 100px;
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+}
+
+.links-wrapper > .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Ubuntu Condensed", sans-serif;
+  transition: 0.5s;
+}
+
+.links-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links-wrapper > .nav-links {
+  width: 120px;
+  text-align: center;
+  font-family: serif;
+  font-size: 1.3em;
+  opacity: 0;
+  visibility: hidden;
+  animation-name: nav;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  transition-property: transform;
+  transition-duration: 2s;
+  transition: all 1s ease-in;
+}
+@keyframes nav {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.links-wrapper > .nav-links a:hover {
+  color: #0bb1f3;
+  letter-spacing: 2px;
+}
+.ctn a {
+  color: #fff;
+  font-size: 1.1em;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  animation-name: nav;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  transition-property: transform;
+  transition: all 1s ease-in;
+  transition-duration: 2s;
+}
+
+.ctn a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #0bb1f3;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform-origin: center;
+  transform: scale(-0);
+  transition: transform linear 0.5s;
+}
+.ctn a:hover::after {
+  transform: scale(1, 1.2);
+}

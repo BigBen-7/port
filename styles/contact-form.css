@@ -1,0 +1,129 @@
+.former {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.form {
+  margin-left: 100px;
+}
+
+.form input {
+  font-size: 1.2em;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  margin-left: 10px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid #031b1b;
+  width: 100%;
+  display: block;
+  transition: 0.3s;
+  animation-name: form;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  visibility: hidden;
+}
+@keyframes form {
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.form input:focus {
+  outline: none;
+  box-shadow: 0 1.1rem 2rem rgba(255, 255, 255, 0.1);
+}
+.form input::-webkit-input-placeholder,
+.form textarea::-webkit-input-placeholder {
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+.form input:focus::-webkit-input-placeholder,
+.form textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+  font-size: 15px;
+}
+.form textarea {
+  margin-top: 20px;
+  width: 100%;
+  height: 170px;
+  margin-left: 1.1rem;
+  border: 3px solid #031b1b;
+  font-size: 1.2rem;
+  font-family: inherit;
+  color: #fff;
+  background-color: transparent;
+  padding: 1.5rem 2rem;
+  transition: 0.3s;
+  animation-name: form;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  visibility: hidden;
+}
+.form textarea:focus {
+  outline: none;
+  box-shadow: 0 1.1rem 2rem rgba(255, 255, 255, 0.1);
+  border: 3px solid #cea135;
+}
+.form label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 3rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.8s;
+  color: #cea135;
+  visibility: hidden;
+  opacity: 0;
+}
+.form input:focus + label,
+.form textarea:focus + label {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(10px);
+}
+
+.btn {
+  background-color: #022d2d;
+  color: #fff;
+  font-size: 1.25em;
+  padding: 10px 20px;
+  border: 1px solid #031b1b;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  letter-spacing: 2px;
+  background: transparent;
+}
+
+.btn:active {
+  box-shadow: 5px 5px 30px rgba(220, 209, 209, 0.4);
+}
+
+.centered-btn-wrapper {
+  margin-left: 150px;
+  margin-bottom: 70px;
+}
+
+.naru img {
+  width: 350px;
+  animation-name: img;
+  position: relative;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+@keyframes img {
+  0% {
+    left: -800px;
+  }
+  100% {
+    left: 0;
+  }
+}

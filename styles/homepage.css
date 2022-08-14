@@ -1,0 +1,42 @@
+/* Navigation styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+/* body styles */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content img {
+  width: 270px;
+}
+.content-inner {
+  padding: 60px 85px;
+}
+.content-inner p {
+  font-size: 1.1em;
+  text-align: left;
+  margin-bottom: 10px;
+  color: #0bb1f3;
+}
+
+.content-inner h1 {
+  font-size: 6rem;
+  letter-spacing: 1.5px;
+}
+#pp {
+  color: #cbcbcb;
+}
+
+hr {
+  height: 2px;
+  color: #0bb1f3;
+}

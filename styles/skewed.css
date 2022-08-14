@@ -1,0 +1,28 @@
+.skewed {
+  /* height: 120px; */
+
+  position: relative;
+  transform: skew(-15deg);
+  transform-origin: left-bottom;
+  margin-bottom: 65px;
+}
+.skewed h1 {
+  background-color: #0bb1f3;
+  width: 175px;
+  padding: 10px;
+  font-size: 2rem;
+  /*position: relative;
+ top: 25px; */
+  left: 11px;
+  color: #000;
+  font-weight: 900;
+  font-family: serif;
+  animation-name: nav;
+  opacity: 0;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition: all 0.5s ease-in;
+}
